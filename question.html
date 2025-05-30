@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question - Scottish National 5 Exam Study Support Platform</title>
+    <link rel="stylesheet" href="{{ url_for('serve_static', filename='css/styles.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url_for('index') }}">Nat5 Study Platform</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{{ url_for('practice') }}">Practice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('upload') }}">Upload</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('admin') }}">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        {% block content %}
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h2>Question {{ question.question_num }}</h2>
+                        <p class="text-muted mb-0">{{ question.subject }} - {{ question.year }}</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="question-text mb-4">
+                            {{ question.text|safe }}
+                        </div>
+                        
+                        {% if diagrams %}
+                        <div class="diagrams mb-4">
+                            <h5>Diagrams</h5>
+                            {% for diagram in diagrams %}
+                            <div class="diagram-container mb-2">
+                                <img src="data:image/png;base64,{{ diagram.image_data|b64encode }}" alt="Diagram for question {{ question.question_num }}" class="img-fluid">
+                            </div>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+                        
+                        <div class="marks-info mb-3">
+                            <span class="badge bg-info">Marks: {{ question.marks }}</span>
+                            {% if question.topic %}
+                            <span class="badge bg-secondary">Topic: {{ question.topic }}</span>
+                            {% endif %}
+                            {% if question.difficulty %}
+                            <span class="badge bg-warning">Difficulty: {{ question.difficulty }}</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Your Answer</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="answer-form">
+                            <input type="hidden" name="question_id" value="{{ question.question_id }}">
+                            
+                            <div class="mb-3">
+                                <label for="answer-text" class="form-label">Answer</label>
+                                <textarea class="form-control" id="answer-text" name="answer_text" rows="4" required></textarea>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="working" class="form-label">Working (optional)</label>
+                                <textarea class="form-control" id="working" name="working" rows="6"></textarea>
+                                <div class="form-text">Show your working to earn method marks even if your final answer is incorrect.</div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Submit Answer</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3>Assessment</h3>
+                    </div>
+                    <div class="card-body" id="assessment-results">
+                        <div class="alert alert-info">
+                            Submit your answer to see the assessment results.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Tips</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Read the question carefully before answering.</li>
+                            <li class="list-group-item">Show all your working to earn method marks.</li>
+                            <li class="list-group-item">Check your answer makes sense in the context of the question.</li>
+                            <li class="list-group-item">For algebraic questions, make sure to simplify your answer.</li>
+                            <li class="list-group-item">Include units in your answer where appropriate.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endblock %}
+    </div>
+
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Scottish National 5 Exam Study Support Platform</h5>
+                    <p>
+                        Helping students prepare for their National 5 exams with interactive practice and personalized feedback.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="{{ url_for('index') }}" class="text-dark">Home</a></li>
+                        <li><a href="{{ url_for('practice') }}" class="text-dark">Practice</a></li>
+                        <li><a href="{{ url_for('about') }}" class="text-dark">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Resources</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="https://www.sqa.org.uk/sqa/45625.html" class="text-dark" target="_blank">SQA National 5</a></li>
+                        <li><a href="https://www.sqa.org.uk/sqa/47419.html" class="text-dark" target="_blank">SQA Mathematics</a></li>
+                        <li><a href="https://www.sqa.org.uk/sqa/47418.html" class="text-dark" target="_blank">SQA Applications of Mathematics</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2025 Scottish National 5 Exam Study Support Platform
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('serve_static', filename='js/main.js') }}"></script>
+    <script>
+        $(document).ready(function() {
+            $('#answer-form').on('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form data
+                var formData = $(this).serialize();
+                
+                // Submit answer via AJAX
+                $.ajax({
+                    url: "{{ url_for('submit_answer') }}",
+                    type: "POST",
+                    data: formData,
+                    success: function(response) {
+                        // Display assessment results
+                        var resultsHtml = '<div class="text-center mb-3">';
+                        resultsHtml += '<h4 class="' + (response.correct ? 'text-success' : 'text-danger') + '">';
+                        resultsHtml += response.marks_awarded + '/' + response.total_marks + ' marks</h4>';
+                        resultsHtml += '</div>';
+                        
+                        resultsHtml += '<div class="alert alert-' + (response.correct ? 'success' : 'primary') + '">';
+                        resultsHtml += response.feedback;
+                        resultsHtml += '</div>';
+                        
+                        if (response.detailed_feedback && response.detailed_feedback.length > 0) {
+                            resultsHtml += '<h5>Detailed Feedback</h5>';
+                            resultsHtml += '<ul class="list-group">';
+                            
+                            response.detailed_feedback.forEach(function(item) {
+                                resultsHtml += '<li class="list-group-item">';
+                                resultsHtml += '<strong>' + item.point + '</strong><br>';
+                                resultsHtml += item.feedback + '<br>';
+                                resultsHtml += '<span class="badge bg-' + (item.marks_awarded > 0 ? 'success' : 'danger') + '">';
+                                resultsHtml += item.marks_awarded + '/' + item.marks_available + ' marks</span>';
+                                resultsHtml += '</li>';
+                            });
+                            
+                            resultsHtml += '</ul>';
+                        }
+                        
+                        $('#assessment-results').html(resultsHtml);
+                    },
+                    error: function(xhr, status, error) {
+                        $('#assessment-results').html('<div class="alert alert-danger">Error assessing response. Please try again.</div>');
+                        console.error(error);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+[
+  {
+    "question_number": "0.(c)",
+    "text": "Calculate ho w much Pepe will charge the customer.",
+    "marks": 3,
+    "topic": "trigonometry",
+    "metadata": {
+      "marks": 3,
+      "units": "M",
+      "instructions": "Calculate ho w much Pepe will charge the customer.",
+      "has_diagram": true,
+      "associated_formulae": [
+        "Trigonometric ratios: sin(\u03b8) = opposite/hypotenuse, cos(\u03b8) = adjacent/hypotenuse, tan(\u03b8) = opposite/adjacent"
+      ]
+    },
+    "diagrams": []
+  },
+  {
+    "question_number": "0.(d)",
+    "text": "Calculate the total cost of this order.",
+    "marks": 3,
+    "topic": "trigonometry",
+    "metadata": {
+      "marks": 3,
+      "units": "M",
+      "instructions": "Calculate the total cost of this order.",
+      "has_diagram": false,
+      "associated_formulae": [
+        "Trigonometric ratios: sin(\u03b8) = opposite/hypotenuse, cos(\u03b8) = adjacent/hypotenuse, tan(\u03b8) = opposite/adjacent"
+      ]
+    },
+    "diagrams": []
+  },
+  {
+    "question_number": "0.(b)",
+    "text": "Calculate how many euros Lucy received.",
+    "marks": 4,
+    "topic": "statistics",
+    "metadata": {
+      "marks": 4,
+      "units": "M",
+      "instructions": "Calculate how many euros Lucy received.",
+      "has_diagram": true,
+      "associated_formulae": []
+    },
+    "diagrams": []
+  },
+  {
+    "question_number": "0.(m)",
+    "text": "Shot put",
+    "marks": 1,
+    "topic": "other",
+    "metadata": {
+      "marks": 1,
+      "units": null,
+      "instructions": null,
+      "has_diagram": false,
+      "associated_formulae": []
+    },
+    "diagrams": []
+  },
+  {
+    "question_number": "0.(b)",
+    "text": "200 m run (sec)Long jump",
+    "marks": 1,
+    "topic": "other",
+    "metadata": {
+      "marks": 1,
+      "units": "m",
+      "instructions": null,
+      "has_diagram": false,
+      "associated_formulae": []
+    },
+    "diagrams": []
+  },
+  {
+    "question_number": "0.(c)",
+    "text": "Javelin throw",
+    "marks": 1,
+    "topic": "other",
+    "metadata": {
+      "marks": 1,
+      "units": null,
+      "instructions": null,
+      "has_diagram": false,
+      "associated_formulae": []
+    },
+    "diagrams": []
+  },
+  {
+    "question_number": "1.(a)",
+    "text": "For these prices, calculate:",
+    "marks": 1,
+    "topic": "other",
+    "metadata": {
+      "marks": 1,
+      "units": null,
+      "instructions": null,
+      "has_diagram": false,
+      "associated_formulae": []
+    },
+    "diagrams": []
+  },
+  {
+    "question_number": "1.(i)",
+    "text": "the mean (ii) the standard deviation. The price of lambs sold in August was also recorded. The mean price was \u00a370.20 and the standard deviation was \u00a33.85.",
+    "marks": 1,
+    "topic": "trigonometry",
+    "metadata": {
+      "marks": 1,
+      "units": "\u00a3",
+      "instructions": null,
+      "has_diagram": false,
+      "associated_formulae": [
+        "Trigonometric ratios: sin(\u03b8) = opposite/hypotenuse, cos(\u03b8) = adjacent/hypotenuse, tan(\u03b8) = opposite/adjacent"
+      ]
+    },
+    "diagrams": []
+  },
+  {
+    "question_number": "9.(b)",
+    "text": "Calculate the volume of water in the tank. 4 7. (continued) Jamel bought a stand for this fish tank. The top of the stand is circular. The corners of the square base of the tank touch the edge of the circle as shown. The diameter of the circle is shown by the dotted line in the aerial view. 30 cm 30 cm aerial view MARKS 7. (continued)",
+    "marks": 1,
+    "topic": "trigonometry",
+    "metadata": {
+      "marks": 1,
+      "units": "cm",
+      "instructions": "Calculate the volume of water in the tank.",
+      "has_diagram": true,
+      "associated_formulae": [
+        "Trigonometric ratios: sin(\u03b8) = opposite/hypotenuse, cos(\u03b8) = adjacent/hypotenuse, tan(\u03b8) = opposite/adjacent"
+      ]
+    },
+    "diagrams": []
+  },
+  {
+    "question_number": "9.(c)",
+    "text": "Calculate the area of the top of the stand. Give your answer in square metres.",
+    "marks": 4,
+    "topic": "trigonometry",
+    "metadata": {
+      "marks": 4,
+      "units": "M",
+      "instructions": "Calculate the area of the top of the stand.",
+      "has_diagram": false,
+      "associated_formulae": [
+        "Trigonometric ratios: sin(\u03b8) = opposite/hypotenuse, cos(\u03b8) = adjacent/hypotenuse, tan(\u03b8) = opposite/adjacent"
+      ]
+    },
+    "diagrams": []
+  }
+]

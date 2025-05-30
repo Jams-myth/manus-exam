@@ -1,0 +1,240 @@
+[
+  {
+    "question_number": "1.",
+    "text": "1. Evaluate\n21 3\n35 4\uf0e6\uf0f6\uf02b\uf0e7\uf0f7\uf0e8\uf0f8.\nGive your answer in its simplest form.",
+    "marks": 1,
+    "topic": "fractions",
+    "metadata": {
+      "marks": 1,
+      "units": "l",
+      "instructions": "Evaluate\n21 3\n35 4\uf0e6\uf0f6\uf02b\uf0e7\uf0f7\uf0e8\uf0f8.",
+      "has_diagram": false,
+      "associated_formulae": []
+    },
+    "diagrams": []
+  },
+  {
+    "question_number": "2.",
+    "text": "2. Given that \uf028\uf02932 fx x\uf03d \uf02d , evaluate \uf028\uf0293f\uf02d.2\n2\n[Turn over",
+    "marks": 1,
+    "topic": "fractions",
+    "metadata": {
+      "marks": 1,
+      "units": "G",
+      "instructions": "2.",
+      "has_diagram": false,
+      "associated_formulae": []
+    },
+    "diagrams": []
+  },
+  {
+    "question_number": "3.",
+    "text": "3. The diagram belo w shows a cone with diameter 20 centimetres and height 60 centimetres.\n20 cm60 cm\nCalculate the volume of the cone.\nTake \u03c0\uf03d\uf03d3 14..2",
+    "marks": 1,
+    "topic": "geometry",
+    "metadata": {
+      "marks": 1,
+      "units": "h",
+      "instructions": "Calculate the volume of the cone.",
+      "has_diagram": true,
+      "associated_formulae": []
+    },
+    "diagrams": []
+  },
+  {
+    "question_number": "4. (a)",
+    "text": "(a) Expr ess 28 15xx\uf02b\uf02b in the form ()2xa b\uf02b\uf02b .",
+    "marks": 1,
+    "topic": "other",
+    "metadata": {
+      "marks": 1,
+      "units": "s",
+      "instructions": "(a) Expr ess 28 15xx\uf02b\uf02b in the form ()2xa b\uf02b\uf02b .",
+      "has_diagram": false,
+      "associated_formulae": []
+    },
+    "diagrams": []
+  },
+  {
+    "question_number": "4. (b)",
+    "text": "(b) Hence, or otherwise, state the coordinates of th e turning point of the graph of \uf028\uf02928 15 fx x x\uf03d\uf02b\uf02b .",
+    "marks": 1,
+    "topic": "other",
+    "metadata": {
+      "marks": 1,
+      "units": "H",
+      "instructions": "(b) Hence, or otherwise, state the coordinates of th e turning point of the graph of \uf028\uf02928 15 fx x x\uf03d\uf02b\uf02b .",
+      "has_diagram": false,
+      "associated_formulae": []
+    },
+    "diagrams": []
+  },
+  {
+    "question_number": "6.",
+    "text": "6. Find the equation of the line passing through the points ( \u22123,\u22121) and (\u22125,7).\nGive the equation in its simplest form.2\n1\n3",
+    "marks": 1,
+    "topic": "algebraic",
+    "metadata": {
+      "marks": 1,
+      "units": "h",
+      "instructions": "Find the equation of the line passing through the points ( \u22123,\u22121) and (\u22125,7).",
+      "has_diagram": false,
+      "associated_formulae": []
+    },
+    "diagrams": []
+  },
+  {
+    "question_number": "7.",
+    "text": "7. Change the subject of the formula 24to .BDBC\uf02b\uf03d",
+    "marks": 1,
+    "topic": "algebraic",
+    "metadata": {
+      "marks": 1,
+      "units": "h",
+      "instructions": "Change the subject of the formula 24to .",
+      "has_diagram": false,
+      "associated_formulae": []
+    },
+    "diagrams": []
+  },
+  {
+    "question_number": "8. (a)",
+    "text": "(a) State the value of a.",
+    "marks": 1,
+    "topic": "other",
+    "metadata": {
+      "marks": 1,
+      "units": "S",
+      "instructions": "State the value of a.",
+      "has_diagram": false,
+      "associated_formulae": []
+    },
+    "diagrams": []
+  },
+  {
+    "question_number": "8. (b)",
+    "text": "(b) State the value of b.2\n1\n1\n[Turn over",
+    "marks": 1,
+    "topic": "other",
+    "metadata": {
+      "marks": 1,
+      "units": "S",
+      "instructions": "State the value of b.",
+      "has_diagram": false,
+      "associated_formulae": []
+    },
+    "diagrams": []
+  },
+  {
+    "question_number": "9.",
+    "text": "9. The diagram sho ws triangle ABC.\nA\n5 cm7 cm\nC3 cmB\n\u2022 AB = 7 centimetres\n\u2022 BC = 3 centimetres\n\u2022 AC = 5 centimetres\nCalculate the value of cosB.\nGive your answer in its simplest form. 2",
+    "marks": 1,
+    "topic": "trigonometry",
+    "metadata": {
+      "marks": 1,
+      "units": "h",
+      "instructions": "Calculate the value of cosB.",
+      "has_diagram": true,
+      "associated_formulae": []
+    },
+    "diagrams": []
+  },
+  {
+    "question_number": "10.",
+    "text": "10. T ommy buys flower seeds from a website.\nTommy is given a 30% discount. He pays \u00a316.10 for the seeds.\nCalculate the cost of the flower seeds without the discount.",
+    "marks": 1,
+    "topic": "other",
+    "metadata": {
+      "marks": 1,
+      "units": "m",
+      "instructions": "Calculate the cost of the flower seeds without the discount.",
+      "has_diagram": false,
+      "associated_formulae": []
+    },
+    "diagrams": []
+  },
+  {
+    "question_number": "11.",
+    "text": "11. Simplify \uf028\uf029245mm\uf02d\uf02d\uf0b4 .\nGive your answer with a positive power.3\n3\n[Turn over",
+    "marks": 1,
+    "topic": "algebraic",
+    "metadata": {
+      "marks": 1,
+      "units": "S",
+      "instructions": "Simplify \uf028\uf029245mm\uf02d\uf02d\uf0b4 .",
+      "has_diagram": false,
+      "associated_formulae": []
+    },
+    "diagrams": []
+  },
+  {
+    "question_number": "12.",
+    "text": "12. Express \uf028\uf029245\n22 xx\uf0b8\uf02b\uf02b, 2x\uf0b9\uf02d as a single fraction in its simplest form.",
+    "marks": 1,
+    "topic": "fractions",
+    "metadata": {
+      "marks": 1,
+      "units": "s",
+      "instructions": "Express \uf028\uf029245\n22 xx\uf0b8\uf02b\uf02b, 2x\uf0b9\uf02d as a single fraction in its simplest form.",
+      "has_diagram": false,
+      "associated_formulae": []
+    },
+    "diagrams": []
+  },
+  {
+    "question_number": "13.",
+    "text": "13. Expand and simplify \uf028\uf02910 10 2 8 5\uf02d\uf02b .2\n3",
+    "marks": 1,
+    "topic": "algebraic",
+    "metadata": {
+      "marks": 1,
+      "units": "s",
+      "instructions": "Expand and simplify \uf028\uf02910 10 2 8 5\uf02d\uf02b .",
+      "has_diagram": false,
+      "associated_formulae": []
+    },
+    "diagrams": []
+  },
+  {
+    "question_number": "14.",
+    "text": "14. Sketch the graph of ( )( )13yx x\uf03d \uf02b\uf02d using the axes provided below.\nOn your sketch, show clearly the points of intersection with the x\u2011axis and the y\u2011axis, and the coordinates of the turning point.\n(Additional axes, if required, can be found on .)\ny\nO x3\n[Turn over",
+    "marks": 1,
+    "topic": "other",
+    "metadata": {
+      "marks": 1,
+      "units": "S",
+      "instructions": "Sketch the graph of ( )( )13yx x\uf03d \uf02b\uf02d using the axes provided below.",
+      "has_diagram": false,
+      "associated_formulae": []
+    },
+    "diagrams": []
+  },
+  {
+    "question_number": "15. (a)",
+    "text": "(a) Find an expression for the area of the triangle. 1   15. (continued)",
+    "marks": 1,
+    "topic": "algebraic",
+    "metadata": {
+      "marks": 1,
+      "units": "s",
+      "instructions": "Find an expression for the area of the triangle.",
+      "has_diagram": false,
+      "associated_formulae": []
+    },
+    "diagrams": []
+  },
+  {
+    "question_number": "15. (b)",
+    "text": "(b) Given that the area of the triangle is equal to the area of the rectangle, find algebraically the value of x.\n4   Additional axes for question 14.\ny\nO x",
+    "marks": 1,
+    "topic": "trigonometry",
+    "metadata": {
+      "marks": 1,
+      "units": "G",
+      "instructions": "(b) Given that the area of the triangle is equal to the area of the rectangle, find algebraically the value of x.",
+      "has_diagram": false,
+      "associated_formulae": []
+    },
+    "diagrams": []
+  }
+]

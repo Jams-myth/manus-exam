@@ -1,0 +1,127 @@
+/* Math Input CSS */
+
+.math-input-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+}
+
+.math-input-toolbar-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.math-input-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 36px;
+  padding: 0 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.math-input-btn:hover {
+  background-color: #e9ecef;
+  border-color: #adb5bd;
+}
+
+.math-input-btn:active {
+  background-color: #dee2e6;
+  transform: translateY(1px);
+}
+
+.math-input-preview {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-height: 40px;
+  background-color: #f8f9fa;
+}
+
+.math-preview-container {
+  padding: 10px;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  min-height: 40px;
+}
+
+.question-container {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.question-number {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0d6efd;
+}
+
+.question-marks {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  background-color: #f8f9fa;
+  font-weight: 500;
+  color: #6c757d;
+}
+
+.question-content {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.answer-section {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 0.375rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .math-input-toolbar {
+    flex-direction: column;
+  }
+  
+  .math-input-toolbar-section {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+  
+  .question-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .question-marks {
+    margin-top: 0.5rem;
+  }
+}

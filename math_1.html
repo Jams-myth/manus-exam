@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2 - Scottish National 5 Exam Study Support Platform</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/static/css/enhanced-styles.css">
+    <link rel="stylesheet" href="/static/css/math-input.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">Nat5 Study Platform</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/practice/">Practice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/upload.html">Upload</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admin.html">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h2>Question 2.</h2>
+                        <p class="text-muted mb-0">Mathematics - 2022</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="question-text mb-4">
+                            <p>Given that \(f(x) = 3x - 2\), evaluate \(f(-3)\).</p>
+                        </div>
+                        
+                        <div class="marks-info mb-3">
+                            <span class="badge bg-info">Marks: 2</span>
+                            <span class="badge bg-secondary">Topic: functions</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Your Answer</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="answer-form">
+                            <input type="hidden" name="question_id" value="1">
+                            
+                            <div class="mb-3">
+                                <label for="answer-text" class="form-label">Answer</label>
+                                <textarea class="form-control" id="answer-text" name="answer_text" rows="4" data-math-input data-math-preview="math-preview" required></textarea>
+                                <div id="math-preview" class="math-preview-container mt-2"></div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="working" class="form-label">Working (optional)</label>
+                                <textarea class="form-control" id="working" name="working" rows="6"></textarea>
+                                <div class="form-text">Show your working to earn method marks even if your final answer is incorrect.</div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Submit Answer</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3>Assessment</h3>
+                    </div>
+                    <div class="card-body" id="assessment-results">
+                        <div class="alert alert-info">
+                            Submit your answer to see the assessment results.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Tips</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Read the question carefully before answering.</li>
+                            <li class="list-group-item">Show all your working to earn method marks.</li>
+                            <li class="list-group-item">To evaluate a function, substitute the given value for x.</li>
+                            <li class="list-group-item">Be careful with negative numbers and signs.</li>
+                            <li class="list-group-item">Check your calculation by substituting back into the original function.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Scottish National 5 Exam Study Support Platform</h5>
+                    <p>
+                        Helping students prepare for their National 5 exams with interactive practice and personalized feedback.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="/" class="text-dark">Home</a></li>
+                        <li><a href="/practice/" class="text-dark">Practice</a></li>
+                        <li><a href="/about.html" class="text-dark">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Resources</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="https://www.sqa.org.uk/sqa/45625.html" class="text-dark" target="_blank">SQA National 5</a></li>
+                        <li><a href="https://www.sqa.org.uk/sqa/47419.html" class="text-dark" target="_blank">SQA Mathematics</a></li>
+                        <li><a href="https://www.sqa.org.uk/sqa/47418.html" class="text-dark" target="_blank">SQA Applications of Mathematics</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2025 Scottish National 5 Exam Study Support Platform
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/static/js/main.js"></script>
+    <script src="/static/js/MathInput.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Initialize MathInput
+            initializeMathInput();
+            
+            // Handle form submission
+            $('#answer-form').on('submit', function(e) {
+                e.preventDefault();
+                
+                // Mock assessment response
+                var resultsHtml = '<div class="text-center mb-3">';
+                resultsHtml += '<h4 class="text-success">2/2 marks</h4>';
+                resultsHtml += '</div>';
+                
+                resultsHtml += '<div class="alert alert-success">';
+                resultsHtml += 'Excellent work! Your answer is correct.';
+                resultsHtml += '</div>';
+                
+                resultsHtml += '<h5>Detailed Feedback</h5>';
+                resultsHtml += '<ul class="list-group">';
+                
+                resultsHtml += '<li class="list-group-item">';
+                resultsHtml += '<strong>Method</strong><br>';
+                resultsHtml += 'Correct substitution of x = -3 into the function.<br>';
+                resultsHtml += '<span class="badge bg-success">1/1 marks</span>';
+                resultsHtml += '</li>';
+                
+                resultsHtml += '<li class="list-group-item">';
+                resultsHtml += '<strong>Final answer</strong><br>';
+                resultsHtml += 'Correct final answer.<br>';
+                resultsHtml += '<span class="badge bg-success">1/1 marks</span>';
+                resultsHtml += '</li>';
+                
+                resultsHtml += '</ul>';
+                
+                $('#assessment-results').html(resultsHtml);
+            });
+        });
+    </script>
+</body>
+</html>

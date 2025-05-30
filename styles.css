@@ -1,0 +1,119 @@
+/* Main styles for the Scottish National 5 Exam Study Support Platform */
+
+/* Custom variables */
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --success-color: #198754;
+  --info-color: #0dcaf0;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --light-color: #f8f9fa;
+  --dark-color: #212529;
+}
+
+/* General styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--dark-color);
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+}
+
+/* Question display */
+.question-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  white-space: pre-line;
+}
+
+.question-text .math {
+  margin: 0 0.2rem;
+}
+
+.diagram-container {
+  max-width: 100%;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.diagram-container img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* Form elements */
+textarea.form-control {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Assessment results */
+.detailed-feedback {
+  margin-top: 1rem;
+}
+
+.feedback-item {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.feedback-item.correct {
+  background-color: rgba(25, 135, 84, 0.1);
+  border-left: 3px solid var(--success-color);
+}
+
+.feedback-item.incorrect {
+  background-color: rgba(220, 53, 69, 0.1);
+  border-left: 3px solid var(--danger-color);
+}
+
+.feedback-item.partial {
+  background-color: rgba(255, 193, 7, 0.1);
+  border-left: 3px solid var(--warning-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 1rem;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .navbar, .footer, .btn {
+    display: none;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .card {
+    border: none;
+  }
+  
+  .card-body {
+    padding: 0;
+  }
+}

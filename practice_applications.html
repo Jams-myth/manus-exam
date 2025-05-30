@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Applications of Mathematics - Scottish National 5 Exam Study Support</title>
+    <link rel="stylesheet" href="/static/css/enhanced-styles.css">
+    <link rel="stylesheet" href="/static/css/math-input.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Scottish National 5 Exam Study Support</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/practice.html">Practice</a></li>
+                <li><a href="/upload.html">Upload</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="practice-section">
+            <h2>Applications of Mathematics Practice Questions</h2>
+            
+            <div class="practice-controls">
+                <div class="filter-container">
+                    <h3>Filter by Topic:</h3>
+                    <select id="topic-filter" onchange="filterByTopic(this.value)">
+                        <option value="all">All Topics</option>
+                        <option value="algebraic">Algebraic</option>
+                        <option value="equations">Equations</option>
+                        <option value="trigonometry">Trigonometry</option>
+                        <option value="geometry">Geometry</option>
+                        <option value="statistics">Statistics</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div id="question-navigation" class="question-navigation">
+                    <!-- Question navigation will be populated by JavaScript -->
+                </div>
+            </div>
+            
+            <div id="questions-container" class="questions-container">
+                <!-- Questions will be loaded here by JavaScript -->
+                <div class="loading">Loading questions...</div>
+            </div>
+            
+            <div id="pagination" class="pagination">
+                <!-- Pagination will be populated by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Scottish National 5 Exam Study Support Platform</p>
+    </footer>
+
+    <script src="/static/js/MathInput.js"></script>
+    <script src="/static/js/questions.js"></script>
+</body>
+</html>
